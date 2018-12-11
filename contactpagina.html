@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="algemeneinformatie.html">Algemeneinformatie</a>
+      <a href="informatieoverhosting.html">Informatie over hosting</a>
+      <a href="informatieovercloud.html">Informatie over Cloud</a>
+      <a href="contactpagina.html" class="active">Contactpagina</a>
+      <a href="klantenpagina.html">Klantenpagina</a>
+      <a href="socialmedia.html">Social media</a>
+      <a href="fotosbedrijf.html">Foto’s van het bedrijf</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<h3>Contact Formulier Colicss</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Voornaam</label>
+    <input type="text" id="fname" name="je voornaam" placeholder="Je voornaam">
+
+    <label for="lname">Achternaam</label>
+    <input type="text" id="lname" name="je achternaam" placeholder="Je achternaam">
+
+    <label for="lname">Email</label>
+    <input type="text" id="lname" name="je achternaam" placeholder="email">
+
+    <label for="country">Land</label>
+    <select id="country" name="country">
+      <option value="australia">Nederland</option>
+      <option value="canada">Belgie</option>
+      <option value="usa">Luxenburg</option>
+    </select>
+
+    <label for="subject">Onderwerp</label>
+    <textarea id="subject" name="subject" placeholder="Typ hier je opmerking" style="height:200px"></textarea>
+
+    <input type="submit" value="Verstuur">
+  </form>
+</div>
+<div class="text">
+
+<h1>Contact Gegevens Colicss</h1>
+<ul>Herenstraat 24</ul>
+<ul>7776 AG, Slagharen</ul>
+<ul>06-12412498</ul>
+<ul>KVK: 05076893</ul>
+</div>
+
+
+<div class="footer">
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-twitter"></a>
+  <a href="#" class="fa fa-youtube"></a>
+  <a href="#" class="fa fa-instagram"></a>
+</div>
+  </body>
+</html>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>

@@ -1,0 +1,40 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="prijzen/prijs3.js"></script>
+</head>
+
+<body>
+
+
+<?php include "include/header.php"; ?>
+
+  <script>
+  function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+      }
+  }
+  </script>
+  
+  <h2 class="calc"> Kies hier hoelang u uw pakket "Goud" wilt hosten bij ons <h2> 
+    <select name="" id="list">
+  		<option value="test1">Per maand</option>
+  		<option value="test2">Per jaar</option>
+  		<option value="test3">Per 5 jaar</option>
+  	</select> <br>
+  	<button id="calculate" onclick="calculate()">Berekenen</button>
+  	<div id="result">Hier komt het resultaat</div>
+  	<div id="discount">Hier komt de korting</div>
+
+
+
+
+	</body>
+
+<?php include ("footer.php"); ?>

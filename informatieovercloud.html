@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="algemeneinformatie.html">Algemeneinformatie</a>
+      <a href="informatieoverhosting.html">Informatie over hosting</a>
+      <a href="informatieovercloud.html"class="active">Informatie over Cloud</a>
+      <a href="contactpagina.html">Contactpagina</a>
+      <a href="klantenpagina.html">Klantenpagina</a>
+      <a href="socialmedia.html">Social media</a>
+      <a href="fotosbedrijf.html">Foto’s van het bedrijf</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<h2 style="text-align:center">Hosting pakketten</h2>
+
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#f2f20d">Geel</li>
+    <li class="grey">4,00 per maand</li>
+    <li>10GB Opslag</li>
+
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#FF5733">Oranje</li>
+    <li class="grey">6,00 per maand</li>
+    <li>100GB Opslag</li>
+
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#33FF49">Groen</li>
+    <li class="grey">10,00 per maand</li>
+    <li>1TB Opslag</li>
+
+  </ul>
+</div>
+<div class="columns-calculator">
+          <ul class="price">
+            <li class="grey1"><h1>Bereken hier hoe duur uw pakket is</h1></li>
+                <select id="selecter">
+        <option id="geel" value="1" >Geel</option>
+        <option id="oranje" value="2" >Oranje</option>
+        <option id="groen" value="3" >Groen</option>
+    </select>
+    <label>Maanden:</label>
+    <input id="stuff" type="text" size="1" value=""/>
+    <button id="choose" onclick="check();">Berekenen</button><br><br>
+    <p>is:<a id="output"></a> Euro</p>
+    </div>
+
+
+
+
+<div class="footer">
+  <p>Colicss 2018 </p>
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-twitter"></a>
+  <a href="#" class="fa fa-youtube"></a>
+  <a href="#" class="fa fa-instagram"></a>
+</div>
+  </body>
+</html>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+function check(){
+    var yourSelect = document.getElementById('selecter').value;
+       if (yourSelect == 1) {
+        a = 4;
+       } else {
+        if(yourSelect == 2){
+            a = 6;
+        } else {
+            a = 10;
+        }
+       }
+    var inputstuff = document.getElementById('stuff').value;
+    b = inputstuff;
+    c = (a * b);
+    document.getElementById('output').innerHTML = c
+}
+</script>

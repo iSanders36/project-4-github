@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="algemeneinformatie.html" >Algemeneinformatie</a>
+      <a href="informatieoverhosting.html"class="active">Informatie over hosting</a>
+      <a href="informatieovercloud.html">Informatie over Cloud</a>
+      <a href="contactpagina.html">Contactpagina</a>
+      <a href="klantenpagina.html">Klantenpagina</a>
+      <a href="socialmedia.html">Social media</a>
+      <a href="fotosbedrijf.html">Foto’s van het bedrijf</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<h2 style="text-align:center">Hosting pakketten</h2>
+
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#cd7f32">Brons</li>
+    <li class="grey">5,95 per maand</li>
+    <li>10GB HDD</li>
+    <li>512MB RAM</li>
+    <li>1 Core</li>
+    <li>100GB Dataverkeer</li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#c0c0c0">Silver</li>
+    <li class="grey">7,95 per maand</li>
+    <li>20GB HDD</li>
+    <li>1048MB RAM</li>
+    <li>2 Cores</li>
+    <li>200GB Dataverkeer</li>
+
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#ccac00">Goud</li>
+    <li class="grey">10,95 per maand</li>
+    <li>50GB HDD</li>
+    <li>2048MB RAM</li>
+    <li>4 Cores</li>
+    <li>Onbeperkt Dataverkeer</li>
+
+  </ul>
+</div>
+
+<div class="columns-calculator">
+          <ul class="price">
+            <li class="grey1"><h1>Bereken hier hoe duur uw pakket is</h1></li>
+                <select id="selecter">
+        <option id="brons" value="1" >Brons</option>
+        <option id="silver" value="2" >Silver</option>
+        <option id="goud" value="3" >Goud</option>
+    </select>
+    <label>Maanden:</label>
+    <input id="stuff" type="text" size="1" value=""/>
+    <button id="choose" onclick="check();">Berekenen</button><br><br>
+    <p>is:<a id="output"></a> Euro</p>
+    </div>
+
+<div class="footer">
+  <p>Colicss 2018 </p>
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-twitter"></a>
+  <a href="#" class="fa fa-youtube"></a>
+  <a href="#" class="fa fa-instagram"></a>
+</div>
+  </body>
+</html>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+function check(){
+    var yourSelect = document.getElementById('selecter').value;
+       if (yourSelect == 1) {
+        a = 5.95;
+       } else {
+        if(yourSelect == 2){
+            a = 7.95;
+        } else {
+            a = 10.95;
+        }
+       }
+    var inputstuff = document.getElementById('stuff').value;
+    b = inputstuff;
+    c = (a * b);
+    document.getElementById('output').innerHTML = c
+}
+</script>
